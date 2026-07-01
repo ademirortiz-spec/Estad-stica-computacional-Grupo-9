@@ -1,1 +1,2 @@
-# Estad-stica-computacional-Grupo-9-
+v1 Creacion de Notebook 
+Estadisticas_computacionalesv9.ipynb
