@@ -1,0 +1,14 @@
+# Figuras generadas por el notebook (outputs embebidos, no archivos)
+*.png
+*.jpg
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
