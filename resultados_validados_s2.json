@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "sumativa": "S2",
+    "grupo": 9,
+    "n_filas": 69091,
+    "semilla": 42
+  },
+  "bootstrap": {
+    "P_RainTomorrow": {
+      "estimacion": 0.2202,
+      "ic_percentil": [
+        0.2171,
+        0.2233
+      ],
+      "ic_bca": [
+        0.2171,
+        0.2234
+      ]
+    },
+    "Humidity3pm_Yes": {
+      "estimacion": 67.1959,
+      "ic_percentil": [
+        66.9047,
+        67.4887
+      ],
+      "ic_bca": [
+        66.8933,
+        67.4777
+      ]
+    },
+    "MaxTemp": {
+      "estimacion": 23.9165,
+      "ic_percentil": [
+        23.8643,
+        23.9686
+      ],
+      "ic_bca": [
+        23.8643,
+        23.9687
+      ]
+    }
+  },
+  "permutacion": {
+    "T_Welch_Humidity3pm": {
+      "p_perm": 0.0,
+      "decision": "Rechaza H0"
+    },
+    "Chi2_RainToday_RainManana": {
+      "p_perm": 0.0,
+      "chi2_obs": 6919.476,
+      "v_cramer": 0.316,
+      "decision": "Rechaza H0"
+    }
+  },
+  "correlaciones": [
+    {
+      "par": "Temp3pm ↔ MaxTemp",
+      "r": "0.985",
+      "ic": [
+        "0.984",
+        "0.985"
+      ],
+      "estabilidad": "Robusta"
+    },
+    {
+      "par": "Pressure9am ↔ Pressure3pm",
+      "r": "0.961",
+      "ic": [
+        "0.961",
+        "0.962"
+      ],
+      "estabilidad": "Robusta"
+    },
+    {
+      "par": "Humidity9am ↔ Humidity3pm",
+      "r": "0.689",
+      "ic": [
+        "0.685",
+        "0.694"
+      ],
+      "estabilidad": "Robusta"
+    },
+    {
+      "par": "Humidity3pm ↔ Sunshine",
+      "r": "-0.637",
+      "ic": [
+        "-0.642",
+        "-0.633"
+      ],
+      "estabilidad": "Robusta"
+    },
+    {
+      "par": "MinTemp ↔ MaxTemp",
+      "r": "0.742",
+      "ic": [
+        "0.739",
+        "0.744"
+      ],
+      "estabilidad": "Robusta"
+    }
+  ],
+  "robustez": [
+    {
+      "estadistico": "Corr Temp3pm↔MaxTemp",
+      "con_outliers": "0.9849",
+      "sin_outliers": "0.9843",
+      "delta": "0.0006"
+    },
+    {
+      "estadistico": "Corr Humidity3pm↔Sunshine",
+      "con_outliers": "-0.6373",
+      "sin_outliers": "-0.5751",
+      "delta": "0.0621"
+    },
+    {
+      "estadistico": "Corr Pressure9am↔Pressure3pm",
+      "con_outliers": "0.9615",
+      "sin_outliers": "0.9661",
+      "delta": "0.0046"
+    },
+    {
+      "estadistico": "P(RainTomorrow=Yes)",
+      "con_outliers": "0.2202",
+      "sin_outliers": "0.1549",
+      "delta": "0.0653"
+    },
+    {
+      "estadistico": "T-test Welch (t-stat)",
+      "con_outliers": "132.15",
+      "sin_outliers": "84.88",
+      "delta": "47.27"
+    }
+  ],
+  "monte_carlo": {
+    "N_iter": 10000,
+    "umbral_Hum": 60.0,
+    "media_simulada": 0.2168,
+    "ic_95": [
+      0.1753,
+      0.2603
+    ]
+  }
+}
